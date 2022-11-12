@@ -6,13 +6,11 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 20:15:39 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/22 16:20:32 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/08 16:50:09 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -20,6 +18,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
+	if (!haystack && len == 0)
+		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	while (haystack[i] != '\0' && i < len)
@@ -36,15 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char	*largestring;
-	const char	*smallstring;
-
-	largestring = "Foo Bar Baz";
-	smallstring = "r";
-	printf("%s\n", strnstr(largestring, smallstring,7));
-	printf("%s\n", ft_strnstr(largestring, smallstring,7));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:13:02 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/21 07:32:15 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/08 19:11:25 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	int	i;
-
-	i = 126;
-	printf("%d\n", ft_isprint(i));
-	printf("%d\n", isprint(i));
-}
-*/

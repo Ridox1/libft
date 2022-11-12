@@ -6,12 +6,12 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 22:51:01 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 02:13:54 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/09 00:48:52 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
+#include <fcntl.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -37,12 +37,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-/*
-int	main(void)
-{
-	int	z;
-
-	z = 10010;
-	ft_putnbr_fd(z, 1);
-}
-*/

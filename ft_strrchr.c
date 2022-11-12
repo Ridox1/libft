@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 17:23:20 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 00:10:51 by ramrani          ###   ########.fr       */
+/*   Created: 2022/11/07 01:03:01 by ramrani           #+#    #+#             */
+/*   Updated: 2022/11/10 01:33:58 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -29,15 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	const char	str[];
-	int			ch;
-
-	str[] = "ThAis is AhAmad";
-	ch = 'A';
-	printf("%s\n", strrchr(str, ch));
-	printf("%s\n", ft_strrchr(str, ch));
-}
-*/

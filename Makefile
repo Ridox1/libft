@@ -6,15 +6,13 @@
 #    By: ramrani <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/29 18:19:40 by ramrani           #+#    #+#              #
-#    Updated: 2022/10/31 23:12:17 by ramrani          ###   ########.fr        #
+#    Updated: 2022/11/10 06:45:42 by ramrani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-
-
 SRCS =  ft_memset.c	\
 		ft_bzero.c	\
 		ft_memcpy.c	\
@@ -47,31 +45,28 @@ SRCS =  ft_memset.c	\
 		ft_putnbr_fd.c	\
 		ft_itoa.c	\
 		ft_split.c	\
-		ft_strtrim.c	\
-
-SRCSB =	ft_lstnew_bonus.c	\
-		ft_lstadd_front_bonus.c	\
-		ft_lstadd_back_bonus.c	\
-		ft_lstsize_bonus.c	\
-		ft_lstlast_bonus.c	\
-		$(SRCS)
-
-all:$(NAME)
-
+		ft_strtrim.c\
+		ft_memcmp.c	
+SRCSB =	ft_lstnew_bonus.c\
+		ft_lstadd_front_bonus.c\
+		ft_lstadd_back_bonus.c\
+		ft_lstsize_bonus.c\
+		ft_lstlast_bonus.c
 OBJS = $(SRCS:.c=.o)
-
 OBJSB = $(SRCSB:.c=.o)
+
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(OBJSB)
-	ar rc $(NAME) $(OBJS) $(OBJSB)
+bonus: $(OBJSB)
+	ar rc $(NAME) $(OBJSB)
 
 clean:
-	rm -rf $(OBJS) $(OBJSB) 
+	rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all

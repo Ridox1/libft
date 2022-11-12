@@ -6,7 +6,7 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 05:45:25 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 22:30:13 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/08 01:33:01 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	*ft_itoa(int n)
 	else
 		count = count_digit(n);
 	to_int = (char *)malloc((count + 1) * sizeof(char));
-	if (to_int == 0)
+	if (to_int == NULL)
 		return (NULL);
 	if (n < 0)
 		n_to_array(to_int, n, count - 1);

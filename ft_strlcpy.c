@@ -5,21 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 14:39:04 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 00:25:18 by ramrani          ###   ########.fr       */
+/*   Created: 2022/11/07 01:02:35 by ramrani           #+#    #+#             */
+/*   Updated: 2022/11/10 02:54:38 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
 	i = 0;
-	if(dstsize)
+	if (dstsize != 0)
 	{
 		while (src[i] != '\0' && i < dstsize - 1)
 		{
@@ -30,15 +28,3 @@ size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-
-/*
-int	main(void)
-{
-	char dest[3];
-	char srcs[] = "rida";
-	printf("%lu\n", strlcpy(dest, srcs, 3));
-	printf("%s\n", dest);
-	printf("%d\n", ft_strlcpy(dest, srcs, 3));
-	printf("%s\n", dest);
-
-}*/

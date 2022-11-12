@@ -6,7 +6,7 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:14:55 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/29 21:00:45 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/07 19:47:03 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	int	i;
-
-	i = 52;
-	printf("%d\n", ft_isdigit(i));
-	printf("%d\n", isdigit(i));
-}
-*/

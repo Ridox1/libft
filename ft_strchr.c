@@ -6,14 +6,11 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 23:42:54 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 00:13:42 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/07 19:52:40 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -30,15 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char	str[];
-	int			ch;
-
-    str[] = "This is a";
-	ch = 105;
-    printf("string starting from \"%c\" est: %s\n", ch, ft_strchr(str, ch));
-    printf("string starting from \"%c\" est: %s\n", ch, strchr(str, ch));
-}
-*/

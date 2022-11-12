@@ -6,7 +6,7 @@
 /*   By: ramrani <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 06:04:45 by ramrani           #+#    #+#             */
-/*   Updated: 2022/10/31 22:13:27 by ramrani          ###   ########.fr       */
+/*   Updated: 2022/11/08 16:30:00 by ramrani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static void	*free_split(char **split, int k)
 	int	i;
 
 	i = 0;
-	if(split)
+	if (split)
 	{
 		while (i <= k)
 		{
@@ -49,7 +49,6 @@ static void	*free_split(char **split, int k)
 		}
 		free(split);
 	}
-	
 	return (NULL);
 }
 
@@ -93,17 +92,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (split);
 }
-
-
-// void fun()
-// {
-// 	char **s = ft_split("ahmed ++ adsasd+asdasd+asdas++",'+');
-// 	free_split(s,3);
-// }
-
-// int main(int argc, char const *argv[])
-// {
-// 	fun();
-// 	system("leaks a.out");
-// 	return 0;
-// }
